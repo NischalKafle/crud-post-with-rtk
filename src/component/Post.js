@@ -26,7 +26,6 @@ const Post = () => {
       alert('Please enter a new title.');
     } else {
       dispatch(editTitle({ id: post.id, title: edit }));
-
     }
 
   };
@@ -86,7 +85,7 @@ const Post = () => {
                 <p className="card-text">{post.body}</p>
                 <div>
                   <div style={{ display: 'flex' }}>
-                    <textarea value={edit.id} onChange={handleChange3} rows={1} cols={40} />
+                    <textarea value={edit.id} onChange={handleChange3} rows={2} cols={39} />
                   </div>
                   <button
                     className="btn btn-warning"
